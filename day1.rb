@@ -1,4 +1,4 @@
-elves_calories = File.readlines('day1.input').map(&:strip).chunk(&:empty?).reject(&:first).map(&:last).map { |x| x.map(&:to_i).sum }
+elves_calories = File.read('day1.input').split("\n\n").map { |x| x.split("\n").map(&:to_i).sum }
 
 p elves_calories.max
 
