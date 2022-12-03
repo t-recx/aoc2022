@@ -58,13 +58,11 @@ def part_b(input)
 
     elves_letters = []
 
-    for k in 0..number_elves_per_group - 1
-      elves_letters[k] = {}
-    end
-
     biggest_length = 0
 
     for k in 0..number_elves_per_group - 1
+      elves_letters[k] = {}
+
       if elves_rucksacks[k].length > biggest_length
         biggest_length = elves_rucksacks[k].length
       end
