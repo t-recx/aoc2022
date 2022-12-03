@@ -72,6 +72,10 @@ def part_b(input)
 
     for k in 0..biggest_length - 1
       for y in 0..number_elves_per_group - 1
+        if elves_rucksacks[y][k].nil?
+          next
+        end
+
         elves_letters[y][elves_rucksacks[y][k]] = nil
 
         common_letter = nil
