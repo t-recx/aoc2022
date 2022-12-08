@@ -1,8 +1,4 @@
 def set_visibility(y, x, board, visibilities, height, width)
-  return if x < 0 || y < 0 || x > width - 1 || y > height - 1
-
-  return unless visibilities[y][x].nil?
-
   visibilities[y][x] = false
 
   offsets = [
